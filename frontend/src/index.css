@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.rich-text-content {
+  @apply text-gray-800 leading-relaxed;
+}
+
+.rich-text-content h1 {
+  @apply text-2xl font-bold my-4;
+}
+
+.rich-text-content h2 {
+  @apply text-xl font-bold my-3;
+}
+
+.rich-text-content p {
+  @apply my-2;
+}
+
+.rich-text-content ul,
+.rich-text-content ol {
+  @apply ml-6 my-2;
+}
+
+.rich-text-content ul {
+  @apply list-disc;
+}
+
+.rich-text-content ol {
+  @apply list-decimal;
+}
+
+.rich-text-content li {
+  @apply my-1;
+}
+
+.rich-text-content a {
+  @apply text-blue-600 hover:underline;
+}
+
+.rich-text-content strong {
+  @apply font-bold;
+}
+
+.rich-text-content em {
+  @apply italic;
+}
+
